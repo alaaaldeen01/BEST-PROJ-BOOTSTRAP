@@ -1,0 +1,579 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --mainColor: rgb(39 36 54);
+}
+
+header {
+    height: 100%;
+}
+
+.navbar {
+    background-color: var(--mainColor);
+    padding: 30px;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+#logo {
+    width: 203px;
+}
+
+.nav-item .nav-link.active {
+    color: white;
+    background-color: rgb(209, 23, 23);
+    padding: 14px;
+}
+
+.nav-item a {
+    color: rgb(92, 133, 133);
+    text-transform: uppercase;
+}
+
+.nav-item a:hover {
+    background-color: rgb(209, 23, 23);
+    padding: 14px;
+    transition: .5s;
+    color: white;
+}
+
+.first {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.main {
+    background-image: url(../img/carousel-03.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    position: absolute;
+    animation-name: one;
+    animation-duration: 6s;
+    animation-delay: 1.4s;
+    animation-iteration-count: infinite;
+}
+
+.main h1 {
+    color: white;
+    background-color: rgb(231, 32, 32);
+    font-size: 60px;
+    text-transform: uppercase;
+    padding: 13px;
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.main p {
+    background-color: white;
+    padding: 13px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.main1 {
+    background-image: url(../img/carousel-02.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    position: absolute;
+    animation-name: one;
+    animation-duration: 6s;
+    animation-delay: 2.8s;
+    animation-iteration-count: infinite;
+
+}
+
+.main1 h1 {
+    color: white;
+    background-color: rgb(231, 32, 32);
+    font-size: 60px;
+    text-transform: uppercase;
+    padding: 13px;
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.main1 p {
+    background-color: white;
+    padding: 13px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.main2 {
+    background-image: url(../img/carousel-01.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    position: absolute;
+    animation-name: one;
+    animation-duration: 6s;
+    animation-delay: 4.2s;
+    animation-iteration-count: infinite;
+
+}
+
+.main2 h1 {
+    color: white;
+    background-color: rgb(231, 32, 32);
+    font-size: 60px;
+    text-transform: uppercase;
+    padding: 13px;
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.main2 p {
+    background-color: white;
+    padding: 13px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.hero {
+    height: 100%;
+    background-color: rgb(39 36 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.one {
+    flex-direction: column;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 35vh;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.cont1 {
+
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.cont2 {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 11px;
+}
+
+.in1 {
+
+    margin-left: 0;
+    width: 48%;
+    height: 250px;
+    background-color: #C81010;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.in2 {
+    width: 48%;
+    height: 250px;
+    background-color: #005881;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    padding: 40px;
+}
+
+.two {
+    padding: 0;
+    padding-left: 8px;
+
+}
+
+.img {
+    margin-top: 20px;
+    background-image: url(../img/img-06.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 520px;
+}
+
+.hero1 {
+    width: 100%;
+    background-color: var(--mainColor);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero1 h2 {
+    color: white;
+    text-align: start;
+    padding-right: 230px;
+}
+
+.hero1 p {
+    padding: 10px 350px;
+    text-align: start;
+}
+
+.hero2 {
+    height: 70vh;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.pic1 {
+    height: 100%;
+    background-image: url(../img/img-01.jpg);
+    background-size: cover;
+    width: 49%;
+}
+
+.pic2 {
+    margin-left: 1.5%;
+    padding-left: 30px;
+    height: 100%;
+    background-color: #005881;
+    color: #eeeeee79;
+    width: 49.5%;
+    padding: 30px 50px;
+}
+
+.pic2 h2 {
+    font-size: 46px;
+    font-weight: bold;
+    color: white;
+}
+
+.hero3 {
+    height: 100%;
+    padding: 0;
+    background-color: var(--mainColor);
+}
+
+.pic3 {
+    width: 49%;
+    height: 312px;
+    background-image: url(../img/portfolio/thumb-01.jpg);
+    background-size: cover;
+}
+
+.pic4 {
+    width: 49.5%;
+    height: 312px;
+    margin-left: 1.5%;
+    background-image: url(../img/portfolio/thumb-02.jpg);
+    background-size: cover;
+}
+
+.pic5 {
+    width: 49%;
+    height: 312px;
+    background-image: url(../img/portfolio/thumb-03.jpg);
+    background-size: cover;
+}
+
+.pic6 {
+    width: 49.5%;
+    height: 312px;
+    margin-left: 1.5%;
+    background-image: url(../img/portfolio/thumb-04.jpg);
+    background-size: cover;
+}
+
+.hero4 {
+    height: 100%;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-top: 15px;
+
+}
+
+.textt {
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    padding: 0;
+}
+
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+    background-color: aqua;
+    width: calc(92% / 4);
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.icon1 {
+    background-color: #3b5998;
+}
+
+.icon2 {
+    background-color: #55acee;
+}
+
+.icon3 {
+    background-color: #bb0000;
+}
+
+.icon4 {
+    background-color: #007bb5;
+}
+
+.hero5 {
+    height: 100%;
+    background-color: var(--mainColor);
+    padding: 0;
+}
+
+.foot1,
+.foot2,
+.foot3,
+.foot4 {
+    width: 25%;
+}
+
+.foot1 {
+    background-image: url(../img/img-04.jpg);
+    background-size: cover;
+    height: 300px;
+}
+
+.foot2 {
+    color: white;
+    padding: 50px;
+}
+
+.foot3 {
+    color: white;
+    padding: 50px;
+}
+
+.foot4 {
+    color: white;
+    padding: 50px;
+}
+
+.foot4 span {
+    color: #C81010;
+}
+
+.foot4 a {
+    text-decoration: none;
+    color: #eeeeee61;
+}
+
+.foot4 a:hover {
+    color: #C81010;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #eeeeee61;
+    font-size: 11px;
+    padding: 20px;
+}
+
+.footer p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+@keyframes one {
+
+    100% {
+        z-index: 5;
+    }
+}
+
+@media (max-width:767px) {
+    .navbar-toggler {
+        background-color: white;
+    }
+
+    .main h1 {
+        font-size: 23px;
+    }
+
+    .main p {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .main1 h1 {
+        font-size: 23px;
+    }
+
+    .main1 p {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .main2 {
+        background-size: cover;
+        background-position: top center;
+    }
+
+    .main2 h1 {
+        font-size: 23px;
+    }
+
+    .main2 p {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .one {
+        height: 100%;
+    }
+
+    .two {
+        padding: 0;
+    }
+
+    .hero1 {
+        height: 70vh;
+    }
+
+    .hero1 h2 {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .hero1 p {
+        padding: 0;
+        text-align: center;
+    }
+
+    .hero2 {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .hero2 .pic1 {
+        width: 100%;
+        height: 302px;
+        background-position: top center;
+        background-size: cover;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .hero2 .pic2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .hero3 .pic3,
+    .pic4,
+    .pic5,
+    .pic6 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .hero4 .row div h3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero4 .icons {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .hero4 .icons a {
+        width: 100%;
+        height: 124px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero5 {
+        margin: 0;
+    }
+
+    .hero5 .row {
+        margin: 0;
+    }
+
+    .foot1,
+    .foot2,
+    .foot3,
+    .foot4 {
+        width: 100%;
+    }
+
+}
